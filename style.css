@@ -89,6 +89,7 @@ h4 {
 
   --mar-b-75: 0.75rem;
   --mar-b-1: 1rem;
+  --mar-b-1_25: 1.25rem;
   --mar-b-1_5: 1.5rem;
   --mar-rl-1_5: 0 1.5rem;
 }
@@ -148,13 +149,18 @@ body {
 }
 
 .price {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: var(--mar-b-1_5);
+}
+
+.price-new {
   font-family: "Fraunces", serif;
   font-size: 2rem;
   line-height: 2rem;
   font-weight: 700;
   color: var(--text-green);
-  display: flex;
-  align-items: center;
 }
 
 .price-old {
@@ -164,6 +170,9 @@ body {
   text-decoration: line-through;
   margin-left: 1rem;
   align-self: flex-end;
+  position: absolute;
+  top: 0;
+  left: 8rem;
 }
 
 .footer {
