@@ -175,6 +175,16 @@ body {
   left: 8rem;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  color: var(--bg-card);
+  border: none;
+  background-color: var(--text-green);
+}
+
 .footer {
   margin-top: auto;
 }
