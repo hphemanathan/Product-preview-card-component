@@ -85,8 +85,12 @@ h4 {
   --text-grey: hsl(228, 12%, 48%);
   --text-green: hsl(158, 36%, 37%);
 
-  /* Margins */
+  /* Padding */
 
+  --pad-tb-1: 1rem 0;
+
+  /* Margins */
+  --mar-t-2: 2rem;
   --mar-b-75: 0.75rem;
   --mar-b-1: 1rem;
   --mar-b-1_25: 1.25rem;
@@ -112,17 +116,39 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: auto;
-  width: min(90%);
+  width: min(90%, 41.125rem);
   border-radius: 0.625rem;
   overflow: hidden;
+
+  @media (min-width: 68.75em) {
+    flex-direction: row;
+    width: 41.125rem;
+  }
 }
 
-.hero-img {
+.hero-img-mobile {
+  display: block;
   margin-bottom: var(--mar-b-1_5);
+
+  @media (min-width: 68.75em) {
+    display: none;
+  }
+}
+
+.hero-img-desktop {
+  display: none;
+  @media (min-width: 68.75em) {
+    display: block;
+    width: 50%;
+  }
 }
 
 .wrapper {
   margin: var(--mar-rl-1_5);
+
+  @media (min-width: 68.75em) {
+    margin-top: var(--mar-t-2);
+  }
 }
 
 .category-text {
@@ -178,11 +204,21 @@ body {
 .btn {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: center;
   color: var(--bg-card);
   border: none;
   background-color: var(--text-green);
+  border-radius: 0.5rem;
+  margin-bottom: var(--mar-b-1_5);
+}
+
+.btn-icon {
+  margin-right: 0.75rem;
+  padding: var(--pad-tb-1);
+}
+
+.btn-text {
+  font-weight: 700;
 }
 
 .footer {
