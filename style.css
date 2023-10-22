@@ -95,7 +95,10 @@ h4 {
   --mar-b-1: 1rem;
   --mar-b-1_25: 1.25rem;
   --mar-b-1_5: 1.5rem;
+  --mar-b-2: 2rem;
   --mar-rl-1_5: 0 1.5rem;
+  --mar-rl-2: 0 2rem;
+  --mar-r-3-l-2_5: 0 3rem 0 2.5rem;
 }
 
 /* ----------------------------------------- */
@@ -147,6 +150,7 @@ body {
   margin: var(--mar-rl-1_5);
 
   @media (min-width: 68.75em) {
+    margin: var(--mar-r-3-l-2_5);
     margin-top: var(--mar-t-2);
   }
 }
@@ -167,11 +171,20 @@ body {
   font-weight: 700;
   color: var(--heading-blue);
   margin-bottom: var(--mar-b-1);
+
+  @media (min-width: 68.75em) {
+    margin-bottom: var(--mar-b-1_5);
+  }
 }
 
 .about-text {
   color: var(--text-grey);
   margin-bottom: var(--mar-b-1_5);
+  font-weight: 500;
+
+  @media (min-width: 68.75em) {
+    margin-bottom: var(--mar-b-2);
+  }
 }
 
 .price {
