@@ -162,6 +162,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   margin-bottom: var(--mar-b-75);
+
+  @media (min-width: 68.75em) {
+    margin-bottom: var(--mar-b-1_5);
+  }
 }
 
 .heading-primary {
@@ -181,6 +185,7 @@ body {
   color: var(--text-grey);
   margin-bottom: var(--mar-b-1_5);
   font-weight: 500;
+  line-height: 1.5rem;
 
   @media (min-width: 68.75em) {
     margin-bottom: var(--mar-b-2);
@@ -192,6 +197,10 @@ body {
   align-items: center;
   position: relative;
   margin-bottom: var(--mar-b-1_5);
+
+  @media (min-width: 68.75em) {
+    margin-bottom: var(--mar-b-2);
+  }
 }
 
 .price-new {
@@ -236,4 +245,14 @@ body {
 
 .footer {
   margin-top: auto;
+}
+
+footer > a {
+  color: black;
+}
+
+footer > a:hover,
+footer > a:active {
+  color: black;
+  cursor: pointer;
 }
