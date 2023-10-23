@@ -26,8 +26,8 @@ Product preview component using HTML5, CSS3 with Flexbox
 
 ### Links
 
-- Solution URL: (https://github.com/hphemanathan/Product-preview-card-component/tree/main)
-- Live Site URL: (https://gilded-shortbread-e8a875.netlify.app/)
+- Solution URL: https://github.com/hphemanathan/Product-preview-card-component/tree/main
+- Live Site URL: https://gilded-shortbread-e8a875.netlify.app/
 
 ## My process
 
